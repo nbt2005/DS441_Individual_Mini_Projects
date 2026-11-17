@@ -1,0 +1,122 @@
+{
+  "timestamp": "2026-11-17T08:00:55.526Z",
+  "network": "Ganache in-process",
+  "chainId": 1337,
+  "contract": "0xe78A0F7E598Cc8b0Bb87894B0F60dD2a88d6a8Ab",
+  "accounts": {
+    "owner": "0x90F8bf6A479f320ead074411a4B0e7944Ea8c9C1",
+    "resident": "0xFFcf8FDEE72ac11b5c542428B35EEF5769C409f0",
+    "verifier": "0x22d491Bde2303f2f43325b2108D26f1eAbA1e32b"
+  },
+  "results": [
+    {
+      "name": "Owner is initial verifier; resident has zero points",
+      "status": "PASS"
+    },
+    {
+      "name": "Resident submits Paper quantity 12; submission event emitted",
+      "status": "PASS"
+    },
+    {
+      "name": "Unauthorized resident cannot approve",
+      "status": "PASS"
+    },
+    {
+      "name": "Owner grants verifier role",
+      "status": "PASS"
+    },
+    {
+      "name": "Verifier approves once and awards exactly 12 points",
+      "status": "PASS"
+    },
+    {
+      "name": "Second approval rejected without changing balance",
+      "status": "PASS"
+    },
+    {
+      "name": "Actual invalid transaction reverts on chain",
+      "status": "PASS"
+    },
+    {
+      "name": "Zero quantity rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "Empty material rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "Oversized material rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "Missing entry rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "Non-owner cannot grant verifier",
+      "status": "PASS"
+    },
+    {
+      "name": "Zero verifier address rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "Revoked verifier cannot approve new entry",
+      "status": "PASS"
+    },
+    {
+      "name": "Owner approves second entry; balances accumulate and remain isolated",
+      "status": "PASS"
+    },
+    {
+      "name": "ABI exposes no transfer or spending function",
+      "status": "PASS"
+    }
+  ],
+  "transactions": [
+    {
+      "label": "submitEntry",
+      "hash": "0x4b17a3e8c92d60e00a7fcd457f57fe0fb44e8c23b8b23a22160e800d15c7a425",
+      "block": 2,
+      "gasUsed": "116697"
+    },
+    {
+      "label": "setVerifier",
+      "hash": "0xedd1b0e909cf7d2841b11d97e1f518070038131644e03be5d62b89cbad27a20a",
+      "block": 3,
+      "gasUsed": "45718"
+    },
+    {
+      "label": "approveEntry",
+      "hash": "0x2829372be232ffcecea0154af9d9185054a6ff316792198a454fd3a66afe457b",
+      "block": 4,
+      "gasUsed": "77170"
+    },
+    {
+      "label": "unauthorized approval (reverted)",
+      "hash": "0xde9ade5bc54ae3e7fccadd5e053fb466450192a125d342d0cc79b84f98cb4b03",
+      "block": 5,
+      "gasUsed": "23729",
+      "status": 0
+    },
+    {
+      "label": "submit second entry",
+      "hash": "0x943c370fe6974b15372f5096b9fea28aa86a4b80ffa58f67f7545c195a16e33c",
+      "block": 6,
+      "gasUsed": "99621"
+    },
+    {
+      "label": "revoke verifier",
+      "hash": "0xb3979df68f9ddbf662f192402b5b83bf152901ff1c8a19b4b6e0b769d631030b",
+      "block": 7,
+      "gasUsed": "23806"
+    },
+    {
+      "label": "approve second entry",
+      "hash": "0x94b9b6915585ce9c017d89f035c9e7c26c99e01a342b91ba1d1661977e7d832b",
+      "block": 8,
+      "gasUsed": "60082"
+    }
+  ]
+}

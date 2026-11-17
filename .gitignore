@@ -1,0 +1,7 @@
+node_modules/
+.ganache/
+artifacts/
+frontend/deployment.json
+evidence-*.log
+evidence/video/
+evidence/*.zip

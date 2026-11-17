@@ -1,0 +1,16 @@
+{
+  "name": "ds441-recycling-points-ledger",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "compile": "node scripts/compile.js",
+    "chain": "ganache --server.host 127.0.0.1 --server.port 7545 --chain.chainId 1337 --chain.networkId 5777 --wallet.deterministic --database.dbPath .ganache",
+    "deploy": "node scripts/deploy.js",
+    "test": "node scripts/test.js",
+    "test:ganache": "node scripts/test.js --ganache",
+    "start": "node scripts/server.js",
+    "demo:auto": "node scripts/demo.js"
+  },
+  "dependencies": { "ethers": "6.13.4", "ganache": "7.9.2", "solc": "0.8.24" },
+  "devDependencies": { "@playwright/test": "1.51.1" }
+}

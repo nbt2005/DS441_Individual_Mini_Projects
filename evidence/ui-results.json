@@ -1,0 +1,18 @@
+{
+  "timestamp": "2026-11-17T08:02:07.225Z",
+  "wallet": "Injected EIP-1193 test bridge, not MetaMask extension",
+  "entryId": "0",
+  "resident": "0xffcf8fdee72ac11b5c542428b35eef5769c409f0",
+  "balanceBefore": "0",
+  "balanceAfter": "12",
+  "checks": [
+    "Resident submission succeeds",
+    "Pending submission does not award points",
+    "Verifier approval succeeds",
+    "Balance increases by 12",
+    "Lookup displays balance",
+    "Desktop and mobile screenshots",
+    "No browser page errors"
+  ],
+  "status": "PASS"
+}
